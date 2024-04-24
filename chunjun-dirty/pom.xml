@@ -19,46 +19,45 @@
 -->
 
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <parent>
-        <artifactId>chunjun</artifactId>
-        <groupId>com.dtstack.chunjun</groupId>
-        <version>${revision}</version>
-    </parent>
-    <modelVersion>4.0.0</modelVersion>
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<parent>
+		<artifactId>chunjun</artifactId>
+		<groupId>com.dtstack.chunjun</groupId>
+		<version>${revision}</version>
+	</parent>
+	<modelVersion>4.0.0</modelVersion>
 
-    <artifactId>chunjun-dirty</artifactId>
-    <packaging>pom</packaging>
-    <name>ChunJun : Dirty</name>
-    <modules>
-        <module>chunjun-dirty-log</module>
-        <module>chunjun-dirty-mysql</module>
-    </modules>
+	<artifactId>chunjun-dirty</artifactId>
+	<packaging>pom</packaging>
+	<name>ChunJun : Dirty</name>
+	<modules>
+		<module>chunjun-dirty-log</module>
+		<module>chunjun-dirty-mysql</module>
+	</modules>
 
-    <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
-    </properties>
+	<properties>
+		<maven.compiler.source>8</maven.compiler.source>
+		<maven.compiler.target>8</maven.compiler.target>
+	</properties>
 
-    <dependencies>
-        <dependency>
-            <groupId>com.dtstack.chunjun</groupId>
-            <artifactId>chunjun-core</artifactId>
-            <version>${project.version}</version>
-            <scope>provided</scope>
-            <exclusions>
-                <exclusion>
-                    <groupId>ch.qos.logback</groupId>
-                    <artifactId>logback-classic</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>ch.qos.logback</groupId>
-                    <artifactId>logback-core</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-    </dependencies>
+	<dependencies>
+		<dependency>
+			<groupId>com.dtstack.chunjun</groupId>
+			<artifactId>chunjun-core</artifactId>
+			<version>${project.version}</version>
+			<scope>provided</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>ch.qos.logback</groupId>
+					<artifactId>logback-classic</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>ch.qos.logback</groupId>
+					<artifactId>logback-core</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+	</dependencies>
 
 	<build>
 		<plugins>

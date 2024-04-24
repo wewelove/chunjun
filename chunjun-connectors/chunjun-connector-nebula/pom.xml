@@ -18,8 +18,7 @@
   ~ under the License.
 -->
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<parent>
 		<artifactId>chunjun-connectors</artifactId>
 		<groupId>com.dtstack.chunjun</groupId>
@@ -30,11 +29,11 @@
 	<artifactId>chunjun-connector-nebula</artifactId>
 	<name>ChunJun : Connector : Nebula</name>
 
-    <properties>
+	<properties>
 		<!-- TODO before this version,the class <HostAddress.class> did not implements Serializable, change the version in some future-->
-        <nebula.version>3.3.0</nebula.version>
+		<nebula.version>3.3.0</nebula.version>
 		<connector.dir>nebula</connector.dir>
-    </properties>
+	</properties>
 
 	<dependencies>
 		<dependency>
@@ -58,5 +57,5 @@
 			<url>https://oss.sonatype.org/content/repositories/snapshots/</url>
 		</repository>
 	</repositories>
-    
+
 </project>
